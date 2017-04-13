@@ -9,8 +9,7 @@ pipeline {
     stage('Clean') {
       steps {
         sh '''echo PATH = ${PATH}
-echo M2_HOME = ${M2_HOME}
-mvn clean'''
+echo M2_HOME = ${M2_HOME}'''
       }
     }
   }
