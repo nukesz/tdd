@@ -10,7 +10,7 @@ mvn clean'''
     }
     stage('Compile') {
       steps {
-        sh 'mvn install'
+        sh 'mvn compile'
       }
     }
     stage('Unit test') {
