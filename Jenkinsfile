@@ -28,5 +28,10 @@ mvn clean'''
         junit '**/target/surefire-reports/*.xml'
       }
     }
+    stage('SonarReport') {
+      steps {
+        sh 'mvn sonar:sonar'
+      }
+    }
   }
 }
